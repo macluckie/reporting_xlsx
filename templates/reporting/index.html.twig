@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">client unique</th>
+            <th scope="col">commandes</th>
+            <th scope="col">click and collect</th>
+            <th scope="col"> Livraison commerçant</th>
+            <th scope="col"> livraison Laposte</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{client}}</td>
+            <td>{{command}}</td>
+            <td>{{click}}</td>
+            <td>{{livraison}}</td>
+            <td>{{laposte}}</td>
+      </tr>      
+    </tbody>
+  </table>
+{% endblock %}
